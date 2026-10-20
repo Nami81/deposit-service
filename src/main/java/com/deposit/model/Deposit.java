@@ -11,8 +11,9 @@ public class Deposit {
     private String currency;
     private LocalDate openDate;
     private DepositStatus status;
+    private Customer customer;
 
-    public Deposit(long id, BigDecimal amount, int termMonths, BigDecimal interestRate, String currency, LocalDate openDate){
+    public Deposit(long id, BigDecimal amount, int termMonths, BigDecimal interestRate, String currency, LocalDate openDate, Customer customer){
         this.id = id;
         this.amount = amount;
         this.termMonths = termMonths;
@@ -20,6 +21,7 @@ public class Deposit {
         this.currency = currency;
         this.openDate = openDate;
         this.status = DepositStatus.ACTIVE;
+        this.customer = customer;
 
     }
 
@@ -45,10 +47,9 @@ public class Deposit {
         return status;
     }
 
-
-
-
-
+    public Customer getCustomer() {
+        return customer;
+    }
 }
 
 
