@@ -7,11 +7,11 @@ public class Customer {
     private String lastName;
     private String personalId;
 
-    public Customer(long id, String firstName, String lastname, String personalid){
+    public Customer(long id, String firstName, String lastName, String personalId){
         this.id = id;
         this.firstName = firstName;
-        this.lastName = lastname;
-        this.personalId = personalid;
+        this.lastName = lastName;
+        this.personalId = personalId;
     }
 
     public long getId(){
