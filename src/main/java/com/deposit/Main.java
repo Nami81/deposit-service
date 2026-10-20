@@ -1,5 +1,6 @@
 package com.deposit;
 
+import com.deposit.model.Customer;
 import com.deposit.model.Deposit;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -7,6 +8,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Deposit deposit = new Deposit(1, new BigDecimal("500.5"),6,new BigDecimal(3), "GEL", LocalDate.now());
+        Customer customer = new Customer(1,"Nikoloz", "Bakhtadze", "01015432082");
 
         System.out.println(deposit.getId());
         System.out.println(deposit.getAmount());
@@ -15,6 +17,8 @@ public class Main {
         System.out.println(deposit.getCurrency());
         System.out.println(deposit.getOpenDate());
         System.out.println(deposit.getStatus());
+        System.out.println(customer.getFirstName());
+        System.out.println(customer.getLastName());
 
 
 
