@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer(1,"Test", "User", "00000000000");
-        Deposit deposit = new Deposit(1, new BigDecimal("500.5"),6,new BigDecimal(3), "GEL", LocalDate.now(), customer);
+        Deposit deposit = new Deposit(1, new BigDecimal("500.5"),0,new BigDecimal(3), "GEL", LocalDate.now(), customer);
 
         System.out.println(deposit.getId());
         System.out.println(deposit.getAmount());
