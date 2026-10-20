@@ -10,6 +10,7 @@ public class Deposit {
     private BigDecimal interestRate;
     private String currency;
     private LocalDate openDate;
+    private DepositStatus status;
 
     public Deposit(long id, BigDecimal amount, int termMonths, BigDecimal interestRate, String currency, LocalDate openDate){
         this.id = id;
@@ -18,6 +19,7 @@ public class Deposit {
         this.interestRate = interestRate;
         this.currency = currency;
         this.openDate = openDate;
+        this.status = DepositStatus.ACTIVE;
 
     }
 
@@ -39,6 +41,11 @@ public class Deposit {
     public LocalDate getOpenDate(){
         return openDate;
     }
+    public DepositStatus getStatus(){
+        return status;
+    }
+
+
 
 
 

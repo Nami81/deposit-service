@@ -14,6 +14,7 @@ public class Main {
         System.out.println(deposit.getInterestRate());
         System.out.println(deposit.getCurrency());
         System.out.println(deposit.getOpenDate());
+        System.out.println(deposit.getStatus());
 
 
 
