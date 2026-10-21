@@ -66,6 +66,10 @@ public class Deposit {
         return getOpenDate().plusMonths(getTermMonths());
     }
 
+    public void close(){
+         this.status = DepositStatus.CLOSED;
+    }
+
 
 
 

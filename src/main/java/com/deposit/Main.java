@@ -27,6 +27,9 @@ public class Main {
         System.out.println(depositService.calculateSimpleInterest(deposit));
         System.out.println(deposit.getMaturityDate());
         System.out.println(depositService.calculateTotalAmount(deposit));
+        //deposit.close();
+        System.out.println(deposit.getStatus());
+        System.out.println(depositService.closeDeposit(deposit, LocalDate.now().plusMonths(4)));
 
 
 
