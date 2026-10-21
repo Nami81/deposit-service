@@ -10,7 +10,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer(1,"Test", "User", "00000000000");
-        Deposit deposit = new Deposit(1, new BigDecimal("1000"),5,new BigDecimal(7), "GEL", LocalDate.now(), customer);
+        Deposit deposit = new Deposit(1, new BigDecimal("500.5"),6,new BigDecimal(3), "GEL", LocalDate.now(), customer);
         DepositService depositService = new DepositService();
 
 

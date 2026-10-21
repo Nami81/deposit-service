@@ -26,7 +26,6 @@ public class DepositService {
     }
 
     public BigDecimal closeDeposit(Deposit deposit, LocalDate closeDate){
-
         if(deposit.getStatus() != DepositStatus.ACTIVE){
             throw new InvalidDepositException("Deposit is not active");
         } else if (closeDate.isBefore(deposit.getMaturityDate())) {
