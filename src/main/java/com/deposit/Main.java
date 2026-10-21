@@ -25,6 +25,8 @@ public class Main {
         System.out.println(customer.getLastName());
         System.out.println(deposit.getCustomer().getFirstName());
         System.out.println(depositService.calculateSimpleInterest(deposit));
+        System.out.println(deposit.getMaturityDate());
+        System.out.println(depositService.calculateTotalAmount(deposit));
 
 
 

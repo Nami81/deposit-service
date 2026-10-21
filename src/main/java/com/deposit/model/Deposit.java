@@ -34,8 +34,6 @@ public class Deposit {
         this.customer = customer;
 
 
-
-
     }
 
     public long getId(){
@@ -63,6 +61,15 @@ public class Deposit {
     public Customer getCustomer() {
         return customer;
     }
+
+    public LocalDate getMaturityDate(){
+        return getOpenDate().plusMonths(getTermMonths());
+    }
+
+
+
+
+
 }
 
 

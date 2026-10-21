@@ -16,4 +16,10 @@ public class DepositService {
         return (amountInterestTerm.divide(BigDecimal.valueOf(1200), 2, RoundingMode.HALF_UP));
 
     }
+
+    public BigDecimal calculateTotalAmount(Deposit deposit){
+        BigDecimal totalAmount = deposit.getAmount().add(calculateSimpleInterest(deposit));
+        return totalAmount;
+    }
+
 }
